@@ -28,6 +28,12 @@
             <li><strong>directory</strong> - name of the directory where the releases are stored.</li>
         </ul>
     </p>
+    <p>
+      Settings that contain only strings, can be overriden using an environment variable with the name <strong>MAGE_DEPLOYMENT_[UPPERCASE VARIABLE NAME]</strong>. eg. the following command will set <strong>max</strong> to a different value than defined in the YAML file:
+    </p>
+    <p class="bash">
+        MAGE_RELEASE_MAX="20" <span class="command-mage">mage</span> deploy to:production
+    </p>
 
     <br />
 

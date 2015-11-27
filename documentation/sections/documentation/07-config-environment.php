@@ -17,6 +17,12 @@
             <li><strong>excludes</strong> - is a list of files and directories to exclude in the rsync. Magallanes always excludes the <em>.mage</em> and <em>.git</em> directories.</li>
         </ul>
     </p>
+    <p>
+      Settings that contain only strings, can be overriden using an environment variable with the name <strong>MAGE_DEPLOYMENT_[UPPERCASE VARIABLE_NAME]</strong>. eg. the following command will set <strong>user</strong> to a different value than defined in the YAML file:
+    </p>
+    <p class="bash">
+        MAGE_DEPLOYMENT_USER="otheruser" <span class="command-mage">mage</span> deploy to:production
+    </p>
 
     <p>
         <h3>hosts</h3>
